@@ -43,40 +43,41 @@ function TODO() {
     }
 
     return (
-        <div className='to-do-list'>
-            <h1>TO DO LIST</h1>
+       
+      <div className='to-do-list container mx-auto '>
+          <h1>TO DO LIST</h1>
 
-            <div>
-                <input
-                    type='text'
-                    placeholder='Enter a Task'
-                    value={newTask}
-                    onChange={handleInputChange}
-                />
-                <button onClick={addTask} className='add-button'>ADD</button>
-            </div>
+          <div>
+              <input
+                  type='text'
+                  placeholder='Enter a Task'
+                  value={newTask}
+                  onChange={handleInputChange}
+              />
+              <button onClick={addTask} className='add-button'>ADD</button>
+          </div>
 
-            <ol>
-                {tasks.map((task, index) =>
-                    <li key={index}>
-                        <input type="checkbox" className="checkbox" />
-                        <span className="text">{task}</span>
+          <ol>
+              {tasks.map((task, index) =>
+                  <li key={index}>
+                      <input type="checkbox" className="checkbox" />
+                      <span className="text">{task}</span>
 
-                        <button className='delete-button' onClick={() => deleteTask(index)}>
-                            <img src={Delete} alt='delete'/>
-                        </button>
+                      <button className='delete-button' onClick={() => deleteTask(index)}>
+                          <img src={Delete} alt='delete'/>
+                      </button>
 
-                        <button className='move-button' onClick={() => moveTaskUP(index)}>
-                            <img src={Up} alt='up arrow'/>
-                        </button>
-                        
-                        <button className='move-button' onClick={() => moveTaskDown(index)}>
-                            <img src={Down} alt='down arrow'/>
-                        </button>
-                    </li>
-                )}
-            </ol>
-        </div>
+                      <button className='move-button' onClick={() => moveTaskUP(index)}>
+                          <img src={Up} alt='up arrow'/>
+                      </button>
+                      
+                      <button className='move-button' onClick={() => moveTaskDown(index)}>
+                          <img src={Down} alt='down arrow'/>
+                      </button>
+                  </li>
+              )}
+          </ol>
+      </div>
     );
 }
 

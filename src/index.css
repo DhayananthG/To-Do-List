@@ -23,6 +23,8 @@ code {
 
 h1 {
   font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 button {
@@ -46,23 +48,24 @@ button {
 
 /* .delete-button {
   background-color: hsl(10, 90%, 50%);
-}
+}*/
 
-.delete-button:hover {
-  background-color: hsl(10, 90%, 40%);
-} */
 
 /* .move-button {
   background-color: hsl(207, 65%, 50%);
+}*/
+
+.delete-button:hover {
+  background-color: hsl(206, 16%, 81%);
 }
 
 .move-button:hover {
-  background-color: hsl(208, 90%, 40%);
-} */
+  background-color: hsl(206, 16%, 81%);
+} 
 
 .checkbox{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   appearance: none;
   border: 2px solid #000000;
   border-radius: 4px;
@@ -98,7 +101,7 @@ input[type='text'] {
 
 ol {
   padding: 0;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   list-style-type: none;
 }
